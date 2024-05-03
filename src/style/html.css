@@ -1,0 +1,46 @@
+html{
+    background: linear-gradient(
+        45deg,
+        rgba(21, 85, 168, 0.15) 28%,
+        transparent 24%,
+        transparent 40%,
+        rgba(138, 30, 189, 0.15) 50%,
+        rgba(29, 185, 185, 0.15) 75%,
+        transparent 75%,
+        transparent
+    );
+    background-size: 258px 248px;
+    width: 100vw;
+    height: 100dvh;
+}
+
+body{
+    min-height: 400px;
+    max-width: 600px;
+    height: 100dvh;
+    overflow: hidden;
+    background: var(--netr_white);
+    position: relative;
+}
+
+:root{
+    --height_header: 50px;
+    --menu_color: #91b4cf;
+    --menu_button_color: #5a89b9;
+    --dark_blue: #C6D7E9;
+    --netr_white: #f2f2f7;
+    --grey: #808080;
+    --gold: #FFD700;
+}
+
+@media screen and (min-width:1000px){
+    body{
+        margin-left: 50%;
+        border: 1px solid var(--menu_color);
+        transform: translate(-50%, 0);
+    }
+
+    .menu, .content .about .info, .content .about .text_info{
+        width: 300px !important;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рынок хрусталя в Гусь-Хрустальном</title>
+    <!-- подключаем js файлы (т. е. скрипты, выполняемы на сайте) -->
+    <script src="src/script/jquery.js"></script>
+    <script src="src/script/header_scripts.js"></script>
+    <script src="src/script/gallary.js"></script>
+    <script src="src/script/catalog.js"></script>
+    <!-- подключаем css файлы (т. е. стили сайта) -->
+    <link rel="stylesheet" href="src/style/reset_css.css">
+    <link rel="stylesheet" href="src/style/html.css">
+    <link rel="stylesheet" href="src/style/header.css">
+    <link rel="stylesheet" href="src/style/content.css">
+</head>
+<body>
+    <div class="header">
+        <div class="icon_menu_togle_button"></div>
+        <div class="ver">ver.:</div>
+        <div class="menu">
+            <div class="button catalog" onclick="activate_button_menu_t('C')">Каталог</div>
+            <div class="button gallary" onclick="activate_button_menu_t('G')">Галерея</div>
+            <div class="button about" onclick="activate_button_menu_t('A')">О проекте</div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="catalog">
+            <div class="cotegory"></div>
+            <div class="produkts"></div>
+        </div>
+        <div class="gallary">
+            <div class="images"></div>
+            <div class="popup_image_view">
+                <div class="button_close"></div>
+                <div class="content">
+                    <div class="button_group">
+                        <div class="back_button"></div>
+                        <div class="image_position">0/0</div>
+                        <div class="next_button"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <h1 class="text_info">Проект: </h1>
+            <h1 class="title_project">Что можно купить на "Хрустальном" рынке в Гусь-Хрустальном</h1>
+            <h1 class="text_info">Автор проета:</h1>
+            <div class="info">Студент группы ИС-121<br>Максимов Виктор</div>
+            <h1 class="text_info">Куратор проета:</h1>
+            <div class="info">Преподователь МДК 01.04<br>Обухова Н. В.</div>
+            <h1 class="text_info">Описание проета:</h1>
+            <div class="info">
+                Приложение «Что можно купить на рынке Хрусталя в Гусь-Хрустальном» поможет вам сориентироваться в многообразии товаров и услуг, представленных на этом популярном рынке. Вы сможете быстро найти нужный товар, узнать его стоимость и условия продажи. В приложении представлены некоторые категории товаров, которые можно приобрести на рынке: от посуды до осветительных предметов.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

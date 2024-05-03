@@ -1,0 +1,89 @@
+.header{
+    width: 100%;
+    height: var(--height_header);
+    background: var(--menu_color);
+    position: relative;
+    border-radius: 0;
+    z-index: 1;
+}
+
+.header .icon_menu_togle_button{
+    width: calc(var(--height_header) - 10px);
+    height: calc(var(--height_header) - 10px);
+    background-color: var(--netr_white);
+    background-image: url("../img/icon/menu_button.ico");
+    background-size: 95%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.menu{
+    width: calc(100% - 10px);
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: var(--height_header);
+    background: var(--menu_color);
+    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+
+.menu .button::before,.menu .is_activate_button_menu::before, .menu::before, .content .about .info::before, .content .gallary .img::before{
+    content: " ";
+    width: 35px;
+    height: 20px;
+    background: var(--netr_white);
+    position: absolute;
+    bottom: -10px;
+    left: -12px;
+    transform: rotateZ(45deg);
+    z-index: 0;
+}
+
+.menu .is_activate_button_menu, .menu .button{
+    width: 100%;
+    background: var(--menu_button_color);
+    margin: 5px;
+    color: var(--netr_white);
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding: 10px;
+    text-align: center;
+    font-weight: 900;
+    font-size: calc(100% * 1.3);
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+
+.menu .button::before, .menu .is_activate_button_menu::before{
+    background: var(--menu_color);
+}
+
+.menu .is_activate_button_menu{
+    background: var(--netr_white);
+    color: var(--menu_button_color);
+}
+
+.header .ver{
+    height: max-content;
+    width: max-content;
+    background: var(--netr_white);
+    color: var(--menu_color);
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+    font-weight: 600;
+} 
